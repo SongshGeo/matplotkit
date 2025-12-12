@@ -91,13 +91,20 @@ def get_sig_marker(
         import numpy as np
 
         numeric_types = (int, float, np.integer, np.floating)
+        has_numpy = True
     except ImportError:
         numeric_types = (int, float)
+        has_numpy = False
 
     if not isinstance(p_val, numeric_types):
         if strict:
             raise TypeError(f"p_val must be a number, got {type(p_val).__name__}")
         return ns_marker
+
+    # Convert numpy types to Python native float for consistent comparison
+    # This ensures compatibility across different Python and numpy versions
+    if has_numpy and isinstance(p_val, (np.integer, np.floating)):
+        p_val = float(p_val)
 
     if p_val < 0 or p_val > 1:
         if strict:
