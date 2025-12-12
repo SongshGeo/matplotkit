@@ -6,13 +6,13 @@
 # Website: https://cv.songshgeo.com/
 
 from functools import wraps
-from typing import Callable, Tuple
+from typing import Callable, Optional, Tuple
 
 import matplotlib.pyplot as plt
 
 
 def with_axes(
-    decorated_func: Callable | None = None, figsize: Tuple[int, int] = (6, 4)
+    decorated_func: Optional[Callable] = None, figsize: Tuple[int, int] = (6, 4)
 ) -> Callable:
     """Decorator to add a default axes to the decorated function.
 
