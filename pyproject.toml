@@ -1,6 +1,6 @@
 [project]
 name = "matplotkit"
-version = "0.1.2"
+version = "0.2.0"
 description = "A Python library for enhancing Matplotlib with additional features."
 authors = [
     {name = "SongshGeo", email = "songshgeo@gmail.com"}
