@@ -6,7 +6,9 @@
 # Website: https://cv.songshgeo.com/
 
 
+from mksci_font import config_font, mksci_font, update_font
+
 from .annotations import add_diagonal_line
 from .decorators import with_axes
 
-__all__ = ["with_axes", "add_diagonal_line"]
+__all__ = ["with_axes", "add_diagonal_line", "config_font", "mksci_font", "update_font"]
