@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.3.0](https://github.com/SongshGeo/matplotkit/compare/v0.2.0...v0.3.0) (2026-04-14)
+
+
+### Features
+
+* :sparkles: Include mksci-font package for easily Chinese usage ([e75b826](https://github.com/SongshGeo/matplotkit/commit/e75b8265d976d5e6ee9d9c9d0daea0c38ed8f3ca))
+
+
+### Bug Fixes
+
+* **dependencies:** :bug: Update mksci-font dependency version constraints for Python compatibility ([8b93a34](https://github.com/SongshGeo/matplotkit/commit/8b93a34626a97680cebc2571d54637c4167ddcea))
+
+
+### Chores
+
+* **dependencies:** :arrow_up: Add mksci-font dependency and update pillow version in project configuration ([f691e5d](https://github.com/SongshGeo/matplotkit/commit/f691e5d35b39e024b823db741a98ec2f68fd5d57))
+
 ## [0.2.0](https://github.com/SongshGeo/matplotkit/compare/v0.1.2...v0.2.0) (2025-12-12)
 
 
